@@ -1,0 +1,44 @@
+# Evaluation Configuration for HeRoS WebArena-Lite Benchmark
+# ==========================================================
+
+# Benchmark Settings
+benchmark:
+  task_subset: "mini"  # Options: "mini", "full", "easy", "medium", "hard"
+  seed: 42  # Random seed for reproducibility
+
+# Agent Configuration
+agents:
+  baseline:
+    enabled: true
+    model_name: "gpt-4o-mini"
+    temperature: 0.7
+    max_tokens: 256
+    # api_key: ""  # Set via OPENAI_API_KEY env var if not specified
+
+  heros:
+    enabled: true
+    use_hindsight: true
+    hindsight_ratio: 0.3
+    # model_name: "gpt-4o-mini"
+
+# Evaluation Settings
+evaluation:
+  max_steps: 20  # Max steps per episode
+  num_runs_per_task: 1  # Number of evaluation runs per task
+  save_results: true  # Save results to file
+  results_dir: "eval/results"  # Directory to save results
+
+# Output Settings
+output:
+  format: "json"  # Options: "json", "csv"
+  verbose: true
+  print_summary: true
+  save_episode_history: true
+
+# Metrics to compute
+metrics:
+  - completion_rate
+  - milestone_hit_rate
+  - avg_reward
+  - avg_episode_length
+  - hindsight_delta
