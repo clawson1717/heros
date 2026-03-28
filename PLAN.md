@@ -93,17 +93,19 @@ No prior work combines rubric-grounded hindsight experience from failed subgoals
 - [x] Unit tests for critic quality (40 passing tests)
 - **PR:** #5 merged ✅ (`18427c4`)
 
-### Step 5 — HeRL-style Hindsight Experience Buffer
-- Implement trajectory storage: `task`, `milestones`, `exec_traces`, `verdicts`, `unmet_rubrics`
-- Hindsight sampling: failed trajectories re-labeled with "what if this subgoal was the goal?"
-- Policy update from hindsight buffer (PPO-style or BC-style supervised fine-tuning)
-- Configurable hindsight ratio (e.g., 30% of batches from hindsight buffer)
+### Step 5 = [DONE] HeRL-style Hindsight Experience Buffer
+- [x] Implement trajectory storage: `task`, `milestones`, `exec_traces`, `verdicts`, `unmet_rubrics` ✅
+- [x] Hindsight sampling: failed trajectories re-labeled with "what if this subgoal was the goal?" ✅
+- [x] Policy update from hindsight buffer (BC-style with GPT-4o-mini; simulated fallback) ✅
+- [x] Configurable hindsight ratio (e.g., 30% of batches from hindsight buffer) ✅
+- **PR:** #6 merged ✅ (`e8ad9dc`)
 
-### Step 6 — Core RL Training Loop
-- Implement `HeRoSEnv` — wraps any task environment with milestone tracking
-- Implement `HeRoSAgent` — planner + actor + critic + hindsight buffer
-- PPO-style policy update combining standard and hindsight experience
-- Logging: milestone success rates, hindsight utilization, reward curves
+### Step 6 = [DONE] Core RL Training Loop
+- [x] Implement `HeRoSEnv` — wraps any task environment with milestone tracking ✅
+- [x] Implement `HeRoSAgent` — planner + actor + critic + hindsight buffer ✅
+- [x] PPO-style policy update combining standard and hindsight experience ✅
+- [x] Logging: milestone success rates, hindsight utilization, reward curves ✅
+- **Unit tests:** 88 passing tests (test_core.py)
 
 ### Step 7 — WebArena-Lite / MiniWoB Evaluation Harness
 - Port evaluation to WebArena-Lite-style web navigation tasks
