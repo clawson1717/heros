@@ -51,7 +51,7 @@ TBD — implementation in progress.
 - [x] `src/heros/__init__.py` with `__version__ = "0.1.0"`
 - [x] `src/heros/planner.py` — stub subgoal planner (MiRA-style)
 - [x] `src/heros/critic.py` — stub milestone critic (OS-Themis-style)
-- [x] `tests/test_skeleton.py` — 9 passing tests
+- [x] `tests/test_skeleton.py` — 10 passing tests
 - [x] README.md updated with Current Status section
 
 ### 📋 Upcoming Steps

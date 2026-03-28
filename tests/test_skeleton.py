@@ -61,12 +61,23 @@ class TestStubBehavior:
     """Verify stub components have basic runnable behavior."""
 
     def test_planner_instantiation(self):
-        """Planner can be instantiated and used."""
+        """Planner can be instantiated and used with a mock API key."""
+        from unittest.mock import MagicMock, patch
         from heros import SubgoalPlanner
-        planner = SubgoalPlanner(planning_depth=3)
-        plan = planner.plan("Write a test")
-        assert plan.task == "Write a test"
-        assert len(plan.milestones) >= 1
+
+        mock_response = MagicMock()
+        mock_response.choices = [MagicMock(message=MagicMock(
+            content='{"milestones":[{"id":"m1","description":"Write a test","rubric":"Test written","expected_output":"test.py"}]}'
+        ))]
+
+        with patch("heros.planner.OpenAI") as mock_openai_cls:
+            mock_openai_cls.return_value.chat.completions.create = MagicMock(
+                return_value=mock_response
+            )
+            planner = SubgoalPlanner(planning_depth=3, api_key="sk-test")
+            plan = planner.plan("Write a test")
+            assert plan.task == "Write a test"
+            assert len(plan.milestones) >= 1
 
     def test_critic_instantiation(self):
         """Critic can be instantiated and used."""
