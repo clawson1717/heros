@@ -71,6 +71,23 @@ TBD — implementation in progress.
 - [x] 40 passing tests (test_critic.py)
 - [x] PR merged: clawson1717/heros#5
 
+### ✅ Step 5: HeRL-style Hindsight Experience Buffer (COMPLETE — PR #6)
+
+- [x] `HindsightBuffer` and `HindsightTrajectory` for failed trajectory storage
+- [x] Hindsight sampling and relabeling of failed subgoals
+- [x] `HindsightTrainer` with BC-style policy update and OpenAI API support
+- [x] 50 passing tests (test_buffer.py + test_trainer.py)
+- [x] PR merged: clawson1717/heros#6
+
+### ✅ Step 6: Core RL Training Loop (COMPLETE — PR #7)
+
+- [x] `HeRoSEnv` — environment wrapper with milestone tracking
+- [x] `HeRoSAgent` — planner + actor + critic + hindsight buffer integration
+- [x] `PPOTrainer` — PPO-style policy update combining standard + hindsight experience
+- [x] `TrainingLogger` — milestone success rates, hindsight utilization, reward curves
+- [x] 88 passing tests (test_core.py)
+- [x] PR merged: clawson1717/heros#7
+
 ### 📋 Upcoming Steps
 
-- Step 5: TBD
+- Step 7: WebArena-Lite / MiniWoB Evaluation Harness
