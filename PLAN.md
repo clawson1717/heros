@@ -85,11 +85,13 @@ No prior work combines rubric-grounded hindsight experience from failed subgoals
 - [x] Unit tests on task decomposition quality ✅ (37 passing tests)
 - **PR:** #3 merged ✅ (`633acd0`)
 
-### Step 4 — OS-Themis-style Milestone Critic Agent
-- Implement critic agent that receives: `milestone rubric` + `execution trace`
-- Critic outputs: `verdict` (pass/fail/partially), `feedback`, `confidence`
-- Support both LLM-as-critic and rule-based critic backends
-- Implement reward auditor: milestone verdict → dense reward signal (0.0 to 1.0)
+### Step 4 — OS-Themis-style Milestone Critic Agent [DONE]
+- [x] Implement critic agent that receives: `milestone rubric` + `execution trace`
+- [x] Critic outputs: `verdict` (pass/fail/partially), `feedback`, `confidence`
+- [x] Support both LLM-as-critic and rule-based critic backends
+- [x] Implement reward auditor: milestone verdict → dense reward signal (0.0 to 1.0)
+- [x] Unit tests for critic quality (40 passing tests)
+- **PR:** #5 merged ✅ (`18427c4`)
 
 ### Step 5 — HeRL-style Hindsight Experience Buffer
 - Implement trajectory storage: `task`, `milestones`, `exec_traces`, `verdicts`, `unmet_rubrics`

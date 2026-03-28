@@ -54,8 +54,23 @@ TBD — implementation in progress.
 - [x] `tests/test_skeleton.py` — 10 passing tests
 - [x] README.md updated with Current Status section
 
+### ✅ Step 3: MiRA-style Subgoal Decomposition Module (COMPLETE — PR #3)
+
+- [x] Full `SubgoalPlanner` with LLM-based and rule-based backends
+- [x] `Milestone` dataclass with id, description, rubric, expected_output, order
+- [x] Task-type detection (code_generation, web_navigation, data_analysis, reasoning, general)
+- [x] Configurable planning depth (1–10 subgoals)
+- [x] 34 passing tests (test_planner.py)
+- [x] PR merged: clawson1717/heros#3
+
+### ✅ Step 4: OS-Themis-style Milestone Critic Agent (COMPLETE — PR #5)
+
+- [x] `MilestoneCritic` with rule-based and LLM backends
+- [x] `Verdict` enum (PASS, FAIL, PARTIAL) and `CriticResult` dataclass
+- [x] `RewardAuditor` for dense RL reward signals (0.0–1.0)
+- [x] 40 passing tests (test_critic.py)
+- [x] PR merged: clawson1717/heros#5
+
 ### 📋 Upcoming Steps
 
-- Step 3: TBD
-- Step 4: TBD
 - Step 5: TBD
