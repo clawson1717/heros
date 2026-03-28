@@ -72,12 +72,12 @@ No prior work combines rubric-grounded hindsight experience from failed subgoals
 - [x] Define project scope and architecture
 - [x] Write PLAN.md and README.md
 
-### Step 2 — Project Skeleton & Dependencies
+### Step 2 — Project Skeleton & Dependencies [DONE]
 - Set up Python project structure (`src/heros/`, `configs/`, `eval/`, `scripts/`)
 - Dependencies: `transformers`, `torch`, `numpy`, `json`, `pathlib`
 - Docker/environment setup file
 
-### Step 3 — MiRA-style Subgoal Decomposition Module
+### Step 3 — MiRA-style Subgoal Decomposition Module [DONE]
 - Implement subgoal planner: task prompt → ordered milestone list
 - Each milestone has: `id`, `description`, `rubric` (pass/fail criteria), `expected_output`
 - Support for configurable planning depth (1-10 subgoals)

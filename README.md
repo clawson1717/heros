@@ -94,8 +94,8 @@ HeRoS solves both by:
 | Step | Task | Status |
 |:----:|------|:------:|
 | 1 | Planning — architecture, combination design | ✅ DONE |
-| 2 | Project skeleton & dependencies | 🔲 TODO |
-| 3 | MiRA-style subgoal decomposition module | 🔲 TODO |
+| 2 | Project skeleton & dependencies | ✅ DONE |
+| 3 | MiRA-style subgoal decomposition module | ✅ DONE |
 | 4 | OS-Themis-style milestone critic agent | 🔲 TODO |
 | 5 | HeRL-style hindsight experience buffer | 🔲 TODO |
 | 6 | Core RL training loop (PPO + hindsight) | 🔲 TODO |
