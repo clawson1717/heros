@@ -88,6 +88,17 @@ TBD — implementation in progress.
 - [x] 88 passing tests (test_core.py)
 - [x] PR merged: clawson1717/heros#7
 
-### 📋 Upcoming Steps
+### ✅ Step 7: WebArena-Lite / MiniWoB Evaluation Harness (COMPLETE — PR #8)
 
-- Step 7: WebArena-Lite / MiniWoB Evaluation Harness
+- [x] `WebArenaLiteBenchmark` — lightweight web navigation benchmark with 5+ tasks
+- [x] `WebTask`, `WebAction`, `EvaluationAction` — task and action dataclasses
+- [x] `MockWebEnv` — simulated web environment with state tracking
+- [x] `SimulatedDOM` support for DOM parsing and element state tracking
+- [x] `BaselineAgent` — raw LLM agent without milestones or hindsight
+- [x] `HeRoSWrappedAgent` — HeRoS agent wrapper with hindsight toggle
+- [x] `HeRoSEvaluator` — full evaluation harness with metrics computation
+- [x] `EvaluationResult` dataclass with per-milestone tracking
+- [x] 89 passing tests (test_evaluator.py)
+- [x] Task subsets: mini (5), easy (1), medium (2), hard (2), full (5)
+
+### 📋 Upcoming Steps

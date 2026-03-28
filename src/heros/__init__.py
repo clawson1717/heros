@@ -12,6 +12,18 @@ from heros.agent import HeRoSAgent, ActResult
 from heros.core import PPOTrainer
 from heros.logging_utils import TrainingMetrics, TrainingLogger
 
+# Benchmark and evaluation
+from heros.benchmark import (
+    WebArenaLiteBenchmark,
+    WebTask,
+    MockWebEnv,
+    WebAction,
+    EvaluationAction,
+)
+from heros.evaluator import HeRoSEvaluator, EvaluationResult
+from heros.baseline_agent import BaselineAgent
+from heros.heros_agent_wrapper import HeRoSWrappedAgent
+
 __all__ = [
     # Planner
     "SubgoalPlanner",
@@ -34,6 +46,18 @@ __all__ = [
     # Logging
     "TrainingMetrics",
     "TrainingLogger",
+    # Benchmark
+    "WebArenaLiteBenchmark",
+    "WebTask",
+    "MockWebEnv",
+    "WebAction",
+    "EvaluationAction",
+    # Evaluator
+    "HeRoSEvaluator",
+    "EvaluationResult",
+    # Agents
+    "BaselineAgent",
+    "HeRoSWrappedAgent",
     # Version
     "__version__",
 ]
