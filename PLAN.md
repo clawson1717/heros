@@ -72,16 +72,18 @@ No prior work combines rubric-grounded hindsight experience from failed subgoals
 - [x] Define project scope and architecture
 - [x] Write PLAN.md and README.md
 
-### Step 2 — Project Skeleton & Dependencies
-- Set up Python project structure (`src/heros/`, `configs/`, `eval/`, `scripts/`)
-- Dependencies: `transformers`, `torch`, `numpy`, `json`, `pathlib`
-- Docker/environment setup file
+### Step 2 = [DONE] Project Skeleton & Dependencies
+- [x] Set up Python project structure (`src/heros/`, `configs/`, `eval/`, `scripts/`) ✅
+- [x] Dependencies: `transformers`, `torch`, `numpy`, `json`, `pathlib` ✅
+- [x] Docker/environment setup file ✅
+- **PR:** #1 merged ✅ (`b105709`)
 
-### Step 3 — MiRA-style Subgoal Decomposition Module
-- Implement subgoal planner: task prompt → ordered milestone list
-- Each milestone has: `id`, `description`, `rubric` (pass/fail criteria), `expected_output`
-- Support for configurable planning depth (1-10 subgoals)
-- Unit tests on task decomposition quality
+### Step 3 = [DONE] MiRA-style Subgoal Decomposition Module
+- [x] Implement subgoal planner: task prompt → ordered milestone list ✅
+- [x] Each milestone has: `id`, `description`, `rubric` (pass/fail criteria), `expected_output` ✅
+- [x] Support for configurable planning depth (1-10 subgoals) ✅
+- [x] Unit tests on task decomposition quality ✅ (37 passing tests)
+- **PR:** #3 merged ✅ (`633acd0`)
 
 ### Step 4 — OS-Themis-style Milestone Critic Agent
 - Implement critic agent that receives: `milestone rubric` + `execution trace`
