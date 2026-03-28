@@ -5,5 +5,15 @@ __author__ = "HeRoS Team"
 
 from heros.planner import SubgoalPlanner
 from heros.critic import MilestoneCritic
+from heros.buffer import HindsightBuffer, HindsightTrajectory
+from heros.trainer import HindsightTrainer, UpdateResult
 
-__all__ = ["SubgoalPlanner", "MilestoneCritic", "__version__"]
+__all__ = [
+    "SubgoalPlanner",
+    "MilestoneCritic",
+    "HindsightBuffer",
+    "HindsightTrajectory",
+    "HindsightTrainer",
+    "UpdateResult",
+    "__version__",
+]
