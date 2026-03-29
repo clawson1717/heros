@@ -107,11 +107,14 @@ No prior work combines rubric-grounded hindsight experience from failed subgoals
 - [x] Logging: milestone success rates, hindsight utilization, reward curves ✅
 - **Unit tests:** 88 passing tests (test_core.py)
 
-### Step 7 — WebArena-Lite / MiniWoB Evaluation Harness
+### Step 7 — WebArena-Lite / MiniWoB Evaluation Harness [DONE]
 - Port evaluation to WebArena-Lite-style web navigation tasks
 - Implement milestone decomposition for web interaction tasks (click, type, navigate, submit)
 - Baseline: raw LLM agent (no milestones, no hindsight)
 - Metrics: task completion rate, milestone hit rate, hindsight improvement delta
+- **Implementation:** `benchmark.py` (WebTask, WebArenaLiteBenchmark, MockWebEnv), `baseline_agent.py` (BaselineAgent), `heros_agent_wrapper.py` (HeRoSWrappedAgent), `evaluator.py` (HeRoSEvaluator, EvaluationResult, run_evaluation, compute_metrics, compare_agents)
+- **Config:** `configs/eval_config.yaml`, `eval/run_evaluation.py`
+- **Tests:** 89 passing tests (test_evaluator.py) — PR #8
 
 ### Step 8 — Interpretability & Audit Trail [DONE]
 - Log every milestone decision with critic reasoning
