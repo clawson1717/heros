@@ -132,10 +132,11 @@ No prior work combines rubric-grounded hindsight experience from failed subgoals
 - Policy optionally updated between inference episodes (self-play style)
 - Benchmark improvement over N inference episodes with no additional training data
 
-### Step 11 — Box Maze Boundary Enforcement (Optional Extension)
-- Integrate Box Maze-style boundary enforcement for agent action space
-- Memory grounding layer to prevent the agent from "forgetting" constraints mid-trajectory
-- Reduces boundary failure rates (applicable to GUI/robotics domains)
+### Step 11 = [DONE] Box Maze Boundary Enforcement
+- Integrate Box Maze-style boundary enforcement for agent action space ✅
+- Memory grounding layer to prevent the agent from "forgetting" constraints mid-trajectory ✅
+- Reduces boundary failure rates (applicable to GUI/robotics domains) ✅
+- **PR:** #11 merged ✅ (`e150262`)
 
 ### Step 12 — Paper, Documentation & Open Source Release
 - Write comprehensive README with benchmarks, architecture diagrams

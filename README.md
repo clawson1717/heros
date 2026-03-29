@@ -133,4 +133,15 @@ TBD — implementation in progress.
 - [x] `eval/run_self_improvement_eval.py` — CLI for benchmark evaluation
 - [x] 50 passing tests (test_self_improver.py)
 
+### Step 11 = [DONE] Box Maze Boundary Enforcement (COMPLETE — PR #11)
+
+- [x] `BoundaryConstraint`, `BoundaryState`, `ConstraintStatus`, `BoxRegion` dataclasses
+- [x] `BoundaryEnforcer` — strict/soft/advisory constraint enforcement with audit trail
+- [x] `MemoryGroundingLayer` — constraint memory across trajectory steps with natural language reminders
+- [x] `HeRoSBoundaryIntegration` — wraps HeRoSAgent with boundary enforcement
+- [x] `BoundaryEvaluator` — computes boundary_prevention_rate, constraint_violation_rate
+- [x] `ConstraintCheckResult`, `EnforcedAction` dataclasses
+- [x] 91 passing tests (test_boundary_enforcer.py)
+- [x] PR merged: clawson1717/heros#11
+
 ### 📋 Upcoming Steps
