@@ -37,6 +37,20 @@ from heros.interpretability import (
     plot_buffer_composition,
 )
 
+# Uncertainty estimation (Step 9)
+from heros.uncertainty import (
+    HybridUncertaintyEstimator,
+    CalibrationPair,
+    CalibrationDataset,
+    CalibrationCurve,
+    compute_expected_calibration_error,
+    compute_auroc,
+    AUROCMetrics,
+    CalibratedMilestoneCritic,
+    UncertaintyAwareRewardAuditor,
+    evaluate_calibration,
+)
+
 __all__ = [
     # Planner
     "SubgoalPlanner",
@@ -81,6 +95,17 @@ __all__ = [
     "RewardAuditor",
     "BufferCompositionAnalyzer",
     "plot_buffer_composition",
+    # Uncertainty (Step 9)
+    "HybridUncertaintyEstimator",
+    "CalibrationPair",
+    "CalibrationDataset",
+    "CalibrationCurve",
+    "compute_expected_calibration_error",
+    "compute_auroc",
+    "AUROCMetrics",
+    "CalibratedMilestoneCritic",
+    "UncertaintyAwareRewardAuditor",
+    "evaluate_calibration",
     # Version
     "__version__",
 ]
