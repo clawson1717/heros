@@ -101,4 +101,26 @@ TBD — implementation in progress.
 - [x] 89 passing tests (test_evaluator.py)
 - [x] Task subsets: mini (5), easy (1), medium (2), hard (2), full (5)
 
+### ✅ Step 8: Interpretability & Audit Trail (COMPLETE — PR #9)
+
+- [x] `InterpretabilityLogger` — logs every milestone decision with critic reasoning
+- [x] Functional interchangeability check for action-space consistency
+- [x] `MilestoneAuditTrail` — exportable JSON per episode
+- [x] `HindsightBufferAnalyzer` — visualizes hindsight buffer composition over training
+- [x] `TrainingVisualizer` — milestone success rates, reward curves, hindsight utilization
+- [x] 30+ passing tests (test_interpretability.py)
+- [x] PR merged: clawson1717/heros#9
+
+### ✅ Step 9: Hybrid Uncertainty Estimation Integration (COMPLETE — PR #10)
+
+- [x] `HybridUncertaintyEstimator` — two-sample estimator (embedding cosine + LLM verbalized confidence)
+- [x] `CalibrationDataset` + `CalibrationPair` — calibration data collection with deterministic sequential split
+- [x] `CalibrationCurve` + `ExpectedCalibrationError` — calibration quality metrics
+- [x] `compute_auroc()` — AUROC with Youden's J optimal threshold selection
+- [x] `CalibratedMilestoneCritic` — wraps MilestoneCritic with Platt scaling calibration
+- [x] `UncertaintyAwareRewardAuditor` — reward dampening by uncertainty factor
+- [x] `evaluate_calibration()` — full evaluation pipeline returning AUROC, ECE, calibration curve
+- [x] 60 passing tests (test_uncertainty.py)
+- [x] PR merged: clawson1717/heros#10
+
 ### 📋 Upcoming Steps

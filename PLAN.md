@@ -113,13 +113,13 @@ No prior work combines rubric-grounded hindsight experience from failed subgoals
 - Baseline: raw LLM agent (no milestones, no hindsight)
 - Metrics: task completion rate, milestone hit rate, hindsight improvement delta
 
-### Step 8 — Interpretability & Audit Trail
+### Step 8 — Interpretability & Audit Trail [DONE]
 - Log every milestone decision with critic reasoning
 - Implement functional interchangeability check (from "Pitfalls in Interpretability")
 - Export milestone-level reward audit trail (JSON per episode)
 - Visualize hindsight buffer composition over training
 
-### Step 9 — Hybrid Uncertainty Estimation Integration
+### Step 9 — Hybrid Uncertainty Estimation Integration [DONE]
 - Integrate the two-sample hybrid estimator (embedding cosine + verbalized confidence) for milestone critic confidence calibration
 - Reduces false-positive milestone passes
 - Evaluate AUROC improvement on milestone verification
