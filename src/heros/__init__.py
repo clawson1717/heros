@@ -24,6 +24,19 @@ from heros.evaluator import HeRoSEvaluator, EvaluationResult
 from heros.baseline_agent import BaselineAgent
 from heros.heros_agent_wrapper import HeRoSWrappedAgent
 
+# Interpretability and Audit Trail (Step 8)
+from heros.interpretability import (
+    MilestoneDecisionType,
+    MilestoneDecisionLogger,
+    FunctionalEquivalenceResult,
+    FunctionalInterchangeabilityCheck,
+    MilestoneAuditEntry,
+    RewardAuditTrail,
+    RewardAuditor,
+    BufferCompositionAnalyzer,
+    plot_buffer_composition,
+)
+
 __all__ = [
     # Planner
     "SubgoalPlanner",
@@ -58,6 +71,16 @@ __all__ = [
     # Agents
     "BaselineAgent",
     "HeRoSWrappedAgent",
+    # Interpretability (Step 8)
+    "MilestoneDecisionType",
+    "MilestoneDecisionLogger",
+    "FunctionalEquivalenceResult",
+    "FunctionalInterchangeabilityCheck",
+    "MilestoneAuditEntry",
+    "RewardAuditTrail",
+    "RewardAuditor",
+    "BufferCompositionAnalyzer",
+    "plot_buffer_composition",
     # Version
     "__version__",
 ]
