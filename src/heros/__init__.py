@@ -37,6 +37,20 @@ from heros.interpretability import (
     plot_buffer_composition,
 )
 
+# Boundary enforcement (Step 11)
+from heros.boundary_enforcer import (
+    BoundaryConstraint,
+    BoundaryState,
+    ConstraintStatus,
+    BoxRegion,
+    BoundaryEnforcer,
+    ConstraintCheckResult,
+    EnforcedAction,
+    MemoryGroundingLayer,
+    HeRoSBoundaryIntegration,
+    BoundaryEvaluator,
+)
+
 # Uncertainty estimation (Step 9)
 from heros.uncertainty import (
     HybridUncertaintyEstimator,
@@ -106,6 +120,17 @@ __all__ = [
     "CalibratedMilestoneCritic",
     "UncertaintyAwareRewardAuditor",
     "evaluate_calibration",
+    # Boundary Enforcement (Step 11)
+    "BoundaryConstraint",
+    "BoundaryState",
+    "ConstraintStatus",
+    "BoxRegion",
+    "BoundaryEnforcer",
+    "ConstraintCheckResult",
+    "EnforcedAction",
+    "MemoryGroundingLayer",
+    "HeRoSBoundaryIntegration",
+    "BoundaryEvaluator",
     # Version
     "__version__",
 ]
