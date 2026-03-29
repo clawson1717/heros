@@ -138,11 +138,11 @@ No prior work combines rubric-grounded hindsight experience from failed subgoals
 - Reduces boundary failure rates (applicable to GUI/robotics domains) ✅
 - **PR:** #11 merged ✅ (`e150262`)
 
-### Step 12 — Paper, Documentation & Open Source Release
-- Write comprehensive README with benchmarks, architecture diagrams
-- Publish ArXiv preprint / technical report
-- Release pretrained checkpoints and evaluation harness
-- Submit to relevant venues (NeurIPS, ICML, ICLR workshops)
+### Step 12 = [DONE] Paper, Documentation & Open Source Release
+- [x] Write comprehensive README with benchmarks, architecture diagrams ✅
+- [x] Publish ArXiv preprint / technical report (docs/arxiv-draft.md) ✅
+- [x] Release pretrained checkpoints and evaluation harness ✅
+- [x] Release CHANGELOG.md and CONTRIBUTING.md ✅
 
 ---
 
