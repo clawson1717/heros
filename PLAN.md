@@ -127,7 +127,7 @@ No prior work combines rubric-grounded hindsight experience from failed subgoals
 - Reduces false-positive milestone passes
 - Evaluate AUROC improvement on milestone verification
 
-### Step 10 — Test-time Self-Improvement Mode
+### Step 10 = [DONE] Test-time Self-Improvement Mode
 - Implement inference-only mode: agent runs task, fails subgoals are added to local hindsight buffer
 - Policy optionally updated between inference episodes (self-play style)
 - Benchmark improvement over N inference episodes with no additional training data

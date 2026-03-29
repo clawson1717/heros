@@ -123,4 +123,14 @@ TBD — implementation in progress.
 - [x] 60 passing tests (test_uncertainty.py)
 - [x] PR merged: clawson1717/heros#10
 
+### ✅ Step 10: Test-time Self-Improvement Mode (COMPLETE)
+
+- [x] `TestTimeSelfImprover` — self-improving agent using failed subgoal hindsight
+- [x] `InferenceEngine` — simplified inference runner with optional self-improvement
+- [x] `EpisodeMetrics`, `PolicyUpdateResult`, `SelfImprovementResult` dataclasses
+- [x] `InferenceEpisodeResult`, `BatchInferenceResult` dataclasses
+- [x] Lightweight BC-style self-play updates (simulated when no API key)
+- [x] `eval/run_self_improvement_eval.py` — CLI for benchmark evaluation
+- [x] 50 passing tests (test_self_improver.py)
+
 ### 📋 Upcoming Steps
